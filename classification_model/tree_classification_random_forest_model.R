@@ -118,4 +118,4 @@ for(city in tree_coverage$NAME) {
 }
 
 write.csv(tree_coverage, "final_data/stl_places_tree_coverage_original.csv", row.names = FALSE)
-write.csv(stl_places, "final_data/stl_places_geographical_data.csv", row.names = FALSE)
+saveRDS(stl_places, "final_data/stl_places_geographical_data.rds")

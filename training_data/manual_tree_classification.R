@@ -32,8 +32,8 @@ library(reticulate)
 library(rgee)
 
 ## setup python environment
-Sys.setenv(RETICULATE_PYTHON = "C:/Users/Luke/miniconda3/envs/ds_env")
-Sys.setenv(EARTHENGINE_PYTHON = "C:/Users/Luke/miniconda3/envs/ds_env")
+Sys.setenv(RETICULATE_PYTHON = "C:/Users/lukes/miniconda3/envs/ds_env")
+Sys.setenv(EARTHENGINE_PYTHON = "C:/Users/lukes/miniconda3/envs/ds_env")
 
 ## setup earth engine
 ee$Authenticate()
