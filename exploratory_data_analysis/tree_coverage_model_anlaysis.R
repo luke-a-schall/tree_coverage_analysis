@@ -92,3 +92,6 @@ hist(stl_places$PERC_DIFF, main = "Differences between Model and Google Tree Cov
 ## statistics for the differences of percentages
 summary(stl_places$PERC_DIFF)
 sd(stl_places$PERC_DIFF)
+
+## save updated geographical data
+saveRDS(stl_places, "final_data/stl_places_geographical_data_combined.rds")
