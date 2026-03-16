@@ -2,6 +2,7 @@
 
 ## upload libraries
 library(tidyverse)
+library(sf)
 
 ## import data from model
 tree_coverage <- read.csv("final_data/stl_places_tree_coverage_original.csv")
@@ -14,7 +15,7 @@ stl_places <- merge(stl_places, tree_coverage[,c(1,3)], by = "NAME")
 rm(tree_coverage)
 
 ## setup export device
-png("exploratory_data_analysis/visualizations/st_louis_tree_coverage_map.png", bg = "transparent")
+png("exploratory_data_analysis/visualizations/st_louis_tree_coverage_map.png")
 
 ## visualize tree coverage
 ggplot(data = stl_places) +
